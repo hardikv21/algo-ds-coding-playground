@@ -3,7 +3,7 @@ import { Fragment, ReactElement } from "react";
 import { ExerciseDetailHOCComponent } from "../../exercise-detail-hoc";
 import { isArraysContainCommonItem1 } from "./code-1";
 
-export const Code1Component = (): ReactElement => (
+const Code1Component = (): ReactElement => (
   <ExerciseDetailHOCComponent
     exerciseNumber={1}
     problemStatement="Given 2 arrays, create a function that let's a user know (true/false) whether these two arrays contain any common items."
@@ -29,3 +29,5 @@ export const Code1Component = (): ReactElement => (
     ]}
   />
 );
+
+export default Code1Component;
