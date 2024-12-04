@@ -1,6 +1,6 @@
 import { Fragment, ReactElement, useState } from "react";
 
-import { ExerciseDetailHOCComponent } from "../../exercise-detail-hoc";
+import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
 import { isArraysContainCommonItem2 } from "./code-1";
 import { Box, TextField } from "@mui/material";
 

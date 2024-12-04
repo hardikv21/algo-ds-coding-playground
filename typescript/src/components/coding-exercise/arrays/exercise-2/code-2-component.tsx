@@ -1,7 +1,7 @@
 import { Fragment, ReactElement, useState } from "react";
 import { Box, TextField } from "@mui/material";
 
-import { ExerciseDetailHOCComponent } from "../../exercise-detail-hoc";
+import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
 import { reverseString2 } from "./code-2";
 
 const Code2Component = (): ReactElement => {

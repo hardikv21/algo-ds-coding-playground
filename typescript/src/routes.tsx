@@ -4,13 +4,16 @@ import { Route, Routes } from "react-router-dom";
 import { HomePageComponent } from "./components/home-page";
 
 const Code1Component = lazy(
-  () => import("./components/coding-exercise/exercise-1/code-1-component"),
+  () =>
+    import("./components/coding-exercise/arrays/exercise-1/code-1-component"),
 );
 const Code2Component = lazy(
-  () => import("./components/coding-exercise/exercise-2/code-2-component"),
+  () =>
+    import("./components/coding-exercise/arrays/exercise-2/code-2-component"),
 );
 const Code3Component = lazy(
-  () => import("./components/coding-exercise/exercise-3/code-3-component"),
+  () =>
+    import("./components/coding-exercise/arrays/exercise-3/code-3-component"),
 );
 const NoPageComponent = lazy(
   () => import("./components/no-page/no-page-component"),
