@@ -17,7 +17,14 @@ export const CardHOCComponent = ({
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ width: 275 }}>
+    <Card
+      sx={{
+        width: "80%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <CardContent>
         <Typography gutterBottom sx={{ color: "text.secondary", fontSize: 14 }}>
           Coding Exercise {exerciseNumber}
@@ -28,7 +35,7 @@ export const CardHOCComponent = ({
         <Typography sx={{ color: "text.secondary", mb: 1.5 }}></Typography>
         <Typography variant="body2">{problemStatement}</Typography>
       </CardContent>
-      <CardActions>
+      <CardActions disableSpacing sx={{ mt: "auto" }}>
         <Button size="small" onClick={() => navigate(`/${exerciseNumber}`)}>
           Learn More
         </Button>

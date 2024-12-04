@@ -7,6 +7,6 @@ import { routes } from "./routes";
 export const App = (): ReactElement => (
   <BrowserRouter>
     <APPBarComponent />
-    {routes()}
+    {routes}
   </BrowserRouter>
 );

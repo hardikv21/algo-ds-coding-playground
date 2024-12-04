@@ -8,6 +8,10 @@ export const ExerciseDetailHOCComponent = ({
   exerciseNumber,
   problemStatement,
   testCases,
+  inputComponent,
+  output,
+  processInput,
+  clearInput,
 }: ExerciseDetailHOCProps): ReactElement => {
   const navigate = useNavigate();
 
@@ -30,9 +34,43 @@ export const ExerciseDetailHOCComponent = ({
           {item}
         </Typography>
       ))}
+      <Box
+        sx={{ marginBottom: "1%", border: "1px solid black", padding: "2%" }}
+      >
+        <Typography variant="body1">
+          <b>Try with your input:</b>
+        </Typography>
+        {inputComponent}
+        <Typography variant="body1" sx={{ marginTop: "1%" }}>
+          <b>Output:</b> {output}
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "20%",
+            marginTop: "1%",
+          }}
+        >
+          <Button
+            variant="outlined"
+            color="success"
+            onClick={() => processInput()}
+          >
+            Check...
+          </Button>
+          <Button variant="outlined" color="error" onClick={() => clearInput()}>
+            Clear
+          </Button>
+        </Box>
+      </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Button variant="text" onClick={() => navigate("/")}>
-          Home
+        <Button
+          variant="outlined"
+          color="secondary"
+          onClick={() => navigate("/")}
+        >
+          Home...
         </Button>
       </Box>
     </Box>
