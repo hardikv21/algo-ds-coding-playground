@@ -15,6 +15,10 @@ export const HomePageComponent = (): ReactElement => (
         {
           problemStatement: "Create a function that reverses a string",
         },
+        {
+          problemStatement:
+            "Create a function that merge 2 sorted arrays into one array.",
+        },
       ].map((item, index) => (
         <Grid key={index + 1} display="flex" justifyContent="center" size={4}>
           <CardHOCComponent
