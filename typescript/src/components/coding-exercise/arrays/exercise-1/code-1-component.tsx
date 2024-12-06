@@ -1,8 +1,8 @@
 import { Fragment, ReactElement, useState } from "react";
+import { Box, TextField } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
 import { isArraysContainCommonItem2 } from "./code-1";
-import { Box, TextField } from "@mui/material";
 
 const Code1Component = (): ReactElement => {
   const [inputArr1, setInputArr1] = useState<string[]>([]);

@@ -3,6 +3,7 @@ import { Box, TextField } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
 import { mergeSortedArrays } from "./code-3";
+import { convertStringToNumber } from "../../utils";
 
 const Code3Component = (): ReactElement => {
   const [inputArr1, setInputArr1] = useState<string>("");
@@ -13,21 +14,6 @@ const Code3Component = (): ReactElement => {
     setInputArr1("");
     setInputArr2("");
     setOutput("");
-  };
-
-  const convertStringToNumber = (str: string): number[] => {
-    const result: number[] = [];
-
-    str
-      .split(",")
-      .forEach(
-        (item) =>
-          (!!item || item === "0") &&
-          !isNaN(Number(item)) &&
-          result.push(Number(item)),
-      );
-
-    return result;
   };
 
   return (
