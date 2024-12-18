@@ -12,6 +12,7 @@ export const HomePageComponent = (): ReactElement => (
         "Create a function that reverses a string",
         "Create a function that merge 2 sorted arrays into one array.",
         "Given an array, create a function that return first repeated number or undefined if there is no repeated number.",
+        "Write a function that finds the factorial of any positive number.",
       ].map((item, index) => (
         <Grid key={index + 1} display="flex" justifyContent="center" size={4}>
           <CardHOCComponent

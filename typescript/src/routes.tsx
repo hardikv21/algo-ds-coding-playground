@@ -21,6 +21,12 @@ const Code4Component = lazy(
       "./components/coding-exercise/hash-tables/exercise-4/code-4-component"
     ),
 );
+const Code5Component = lazy(
+  () =>
+    import(
+      "./components/coding-exercise/recursion/exercise-5/code-5-component"
+    ),
+);
 const NoPageComponent = lazy(
   () => import("./components/no-page/no-page-component"),
 );
@@ -34,6 +40,7 @@ export const routes = (
         <Code2Component />,
         <Code3Component />,
         <Code4Component />,
+        <Code5Component />,
       ].map((item, index) => (
         <Route key={index} path={`/${index + 1}`} element={item} />
       ))}

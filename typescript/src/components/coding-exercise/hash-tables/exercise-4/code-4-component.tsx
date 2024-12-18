@@ -16,7 +16,7 @@ const Code4Component = (): ReactElement => {
 
   return (
     <ExerciseDetailHOCComponent
-      exerciseNumber={1}
+      exerciseNumber={4}
       problemStatement="Given an array, create a function that return first repeated number or undefined if there is no repeated number."
       testCases={[
         <Fragment>
