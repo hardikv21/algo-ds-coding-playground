@@ -12,4 +12,4 @@
 
 **Test Case 3**:
 <br />num = -1
-<br />Result: undefined
+<br />Result: -1

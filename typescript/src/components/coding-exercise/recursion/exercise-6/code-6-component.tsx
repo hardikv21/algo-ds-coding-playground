@@ -2,10 +2,10 @@ import { Fragment, ReactElement, useState } from "react";
 import { Box } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
-import { findFactorialRecursive } from "./code-5";
+import { fibonacciIterative } from "./code-6";
 import { NumberInputComponent } from "../../number-input";
 
-const Code5Component = (): ReactElement => {
+const Code6Component = (): ReactElement => {
   const [inputArr, setInputArr] = useState<number | null>();
   const [output, setOutput] = useState<string>("");
 
@@ -16,20 +16,20 @@ const Code5Component = (): ReactElement => {
 
   return (
     <ExerciseDetailHOCComponent
-      exerciseNumber={5}
-      problemStatement="Write a function that finds the factorial of any positive number."
+      exerciseNumber={6}
+      problemStatement="Write a function that returns Nth index - number value of the Fibonacci sequence where."
       testCases={[
         <Fragment>
-          num = 4 <br />
-          Result: {findFactorialRecursive(4)}
+          num = 5 <br />
+          Result: {fibonacciIterative(5)}
         </Fragment>,
         <Fragment>
           num = 10 <br />
-          Result: {findFactorialRecursive(10)}
+          Result: {fibonacciIterative(10)}
         </Fragment>,
         <Fragment>
           num = -1 <br />
-          Result: {findFactorialRecursive(-1)}
+          Result: {fibonacciIterative(-1)}
         </Fragment>,
       ]}
       output={output}
@@ -47,11 +47,11 @@ const Code5Component = (): ReactElement => {
         </Box>
       }
       processInput={() =>
-        inputArr && setOutput(findFactorialRecursive(inputArr).toString())
+        inputArr && setOutput(fibonacciIterative(inputArr).toString())
       }
       clearInput={clearInput}
     />
   );
 };
 
-export default Code5Component;
+export default Code6Component;
