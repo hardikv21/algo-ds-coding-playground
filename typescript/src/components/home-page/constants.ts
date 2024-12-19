@@ -5,4 +5,5 @@ export const problemStatements: string[] = [
   "Given an array, create a function that return first repeated number or undefined if there is no repeated number.",
   "Write a function that finds the factorial of any positive number.",
   "Write a function that returns Nth index - number value of the Fibonacci sequence where.",
+  "Create a recursive function that reverses a string.",
 ];

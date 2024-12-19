@@ -1,4 +1,4 @@
-# Exercise 4
+# Exercise 6
 
 **Problem Statement**: Write a function that returns Nth index - number value of the Fibonacci sequence where.
 

@@ -2,7 +2,7 @@ import { Fragment, ReactElement, useState } from "react";
 import { Box } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
-import { fibonacciIterative } from "./code-6";
+import { fibonacciRecursive } from "./code-6";
 import { NumberInputComponent } from "../../number-input";
 
 const Code6Component = (): ReactElement => {
@@ -21,15 +21,15 @@ const Code6Component = (): ReactElement => {
       testCases={[
         <Fragment>
           num = 5 <br />
-          Result: {fibonacciIterative(5)}
+          Result: {fibonacciRecursive(5)}
         </Fragment>,
         <Fragment>
           num = 10 <br />
-          Result: {fibonacciIterative(10)}
+          Result: {fibonacciRecursive(10)}
         </Fragment>,
         <Fragment>
           num = -1 <br />
-          Result: {fibonacciIterative(-1)}
+          Result: {fibonacciRecursive(-1)}
         </Fragment>,
       ]}
       output={output}
@@ -47,7 +47,7 @@ const Code6Component = (): ReactElement => {
         </Box>
       }
       processInput={() =>
-        inputArr && setOutput(fibonacciIterative(inputArr).toString())
+        inputArr && setOutput(fibonacciRecursive(inputArr).toString())
       }
       clearInput={clearInput}
     />

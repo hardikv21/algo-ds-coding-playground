@@ -1,4 +1,4 @@
-# Exercise 4
+# Exercise 5
 
 **Problem Statement**: Write a function that finds the factorial of any positive number.
 

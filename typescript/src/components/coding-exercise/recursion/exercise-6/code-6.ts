@@ -1,4 +1,4 @@
-export const fibonacciIterative = (index: number): number =>
+export const fibonacciRecursive = (index: number): number =>
   index < 2
     ? index
-    : fibonacciIterative(index - 1) + fibonacciIterative(index - 2);
+    : fibonacciRecursive(index - 1) + fibonacciRecursive(index - 2);
