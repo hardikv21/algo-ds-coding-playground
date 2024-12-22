@@ -6,4 +6,5 @@ export const problemStatements: string[] = [
   "Write a function that finds the factorial of any positive number.",
   "Write a function that returns Nth index - number value of the Fibonacci sequence where.",
   "Create a recursive function that reverses a string.",
+  "Sort an array with the Bubble sort.",
 ];

@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
 import { fibonacciRecursive } from "./code-6";
-import { NumberInputComponent } from "../../number-input";
+import { NumberInputComponent } from "../../../number-input";
 
 const Code6Component = (): ReactElement => {
   const [inputArr, setInputArr] = useState<number | null>();
