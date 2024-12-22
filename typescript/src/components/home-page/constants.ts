@@ -8,4 +8,5 @@ export const problemStatements: string[] = [
   "Create a recursive function that reverses a string.",
   "Sort an array with the Bubble sort.",
   "Sort an array with the Selection sort.",
+  "Sort an array with the Insertion sort.",
 ];
