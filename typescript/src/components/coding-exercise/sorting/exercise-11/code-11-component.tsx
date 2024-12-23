@@ -2,10 +2,10 @@ import { Fragment, ReactElement, useState } from "react";
 import { Box, TextField } from "@mui/material";
 
 import { ExerciseDetailHOCComponent } from "../../../exercise-detail-hoc";
-import { insertionSort } from "./code-10";
+import { mergeSort } from "./code-11";
 import { convertStringToNumber } from "../../utils";
 
-const Code10Component = (): ReactElement => {
+const Code11Component = (): ReactElement => {
   const [inputArr, setInputArr] = useState<string>("");
   const [output, setOutput] = useState<string>("");
 
@@ -16,20 +16,20 @@ const Code10Component = (): ReactElement => {
 
   return (
     <ExerciseDetailHOCComponent
-      exerciseNumber={10}
-      problemStatement="Sort an array with the Insertion sort."
+      exerciseNumber={11}
+      problemStatement="Sort an array with the Merge sort."
       testCases={[
         <Fragment>
           arr = [2, 5, 1, 2, 3, 5, 1, 2, 4] <br />
-          Result: {insertionSort([2, 5, 1, 2, 3, 5, 1, 2, 4]).toString()}
+          Result: {mergeSort([2, 5, 1, 2, 3, 5, 1, 2, 4]).toString()}
         </Fragment>,
         <Fragment>
           arr = [2, 1, 1, 2, 3, 5, 1, 2, 4] <br />
-          Result: {insertionSort([2, 1, 1, 2, 3, 5, 1, 2, 4]).toString()}
+          Result: {mergeSort([2, 1, 1, 2, 3, 5, 1, 2, 4]).toString()}
         </Fragment>,
         <Fragment>
           arr = [2, 3, 4, 5] <br />
-          Result: {insertionSort([2, 3, 4, 5]).toString()}
+          Result: {mergeSort([2, 3, 4, 5]).toString()}
         </Fragment>,
       ]}
       output={output}
@@ -48,11 +48,11 @@ const Code10Component = (): ReactElement => {
         </Box>
       }
       processInput={() =>
-        setOutput(insertionSort(convertStringToNumber(inputArr)).toString())
+        setOutput(mergeSort(convertStringToNumber(inputArr)).toString())
       }
       clearInput={clearInput}
     />
   );
 };
 
-export default Code10Component;
+export default Code11Component;

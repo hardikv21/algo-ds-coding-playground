@@ -9,4 +9,5 @@ export const problemStatements: string[] = [
   "Sort an array with the Bubble sort.",
   "Sort an array with the Selection sort.",
   "Sort an array with the Insertion sort.",
+  "Sort an array with the Merge sort.",
 ];

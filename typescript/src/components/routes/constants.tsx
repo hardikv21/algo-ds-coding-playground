@@ -30,6 +30,9 @@ const Component9 = lazy(
 const Component10 = lazy(
   () => import("../coding-exercise/sorting/exercise-10/code-10-component"),
 );
+const Component11 = lazy(
+  () => import("../coding-exercise/sorting/exercise-11/code-11-component"),
+);
 
 export const ComponentsRoute: ReactElement[] = [
   <Component1 />,
@@ -42,4 +45,5 @@ export const ComponentsRoute: ReactElement[] = [
   <Component8 />,
   <Component9 />,
   <Component10 />,
+  <Component11 />,
 ];
